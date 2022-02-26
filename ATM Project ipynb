@@ -30,92 +30,38 @@
     {
       "cell_type": "code",
       "source": [
-        "print(\"\"\"\n",
-        "\n",
-        "ATM uygulamasına hoş geldiniz.!\n",
-        "(1) Bakiye Sorma\n",
-        "(2) Para Çekme\n",
-        "(3) Para Yatırma\n",
-        "(q) Çıkış\n",
-        "\n",
-        "\"\"\")\n",
-        "\n",
-        "bakiye = 1000\n",
-        "\n",
-        "while True:\n",
-        "    islem = input(\"Lütfen işlem seçiniz: \")\n",
-        "    if islem == \"q\":\n",
-        "        print(\"İyi Günler Dileriz..\")\n",
-        "        break\n",
-        "    elif (islem == \"1\"):\n",
-        "        print(\"Bakiye: {}\".format(bakiye))\n",
-        "\n",
-        "    elif (islem == \"2\"):\n",
-        "        tutar = int(input(\"Ne kadar çekmek istiyorsunuz: \"))\n",
-        "        \n",
-        "        if (bakiye - tutar < 0):\n",
-        "            print(\"Yetersiz bakiye...\")\n",
-        "            continue\n",
-        "        bakiye -= tutar\n",
-        "\n",
-        "    elif (islem == \"3\"):\n",
-        "        tutar = int(input(\"Ne kadar para yatırmak istiyorsunuz: \"))\n",
-        "        bakiye = bakiye + tutar\n",
-        "        print(\"Yeni bakiyeniz: {}\".format(bakiye))\n",
-        "    else:\n",
-        "        print(\"Geçersiz işlem girdiniz..!\")"
-      ],
-      "metadata": {
-        "id": "1or1g5a36GIH",
-        "outputId": "0da84ba6-adb0-4993-edf9-8107bb894805",
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        }
-      },
-      "execution_count": 5,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "\n",
-            "\n",
-            "ATM uygulamasına hoş geldiniz.!\n",
-            "(1) Bakiye Sorma\n",
-            "(2) Para Çekme\n",
-            "(3) Para Yatırma\n",
-            "(q) Çıkış\n",
-            "\n",
-            "\n",
-            "Lütfen işlem seçiniz: 1\n",
-            "Bakiye: 1000\n",
-            "Lütfen işlem seçiniz: 2\n",
-            "Ne kadar çekmek istiyorsunuz: 100\n",
-            "Lütfen işlem seçiniz: 2\n",
-            "Ne kadar çekmek istiyorsunuz: 10\n",
-            "Lütfen işlem seçiniz: 5\n",
-            "Geçersiz işlem girdiniz..!\n",
-            "Lütfen işlem seçiniz: 10\n",
-            "Geçersiz işlem girdiniz..!\n",
-            "Lütfen işlem seçiniz: 3\n",
-            "Ne kadar para yatırmak istiyorsunuz: 20\n",
-            "Yeni bakiyeniz: 910\n",
-            "Lütfen işlem seçiniz: q\n",
-            "İyi Günler Dileriz..\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        ""
-      ],
-      "metadata": {
-        "id": "Ks1CuI3f7DzP"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
-}
+       #################################################################################################################################################################3
+ print("""
+
+ATM uygulamasına hoş geldiniz.!
+(1) Bakiye Sorma
+(2) Para Çekme
+(3) Para Yatırma
+(q) Çıkış
+
+""")
+
+bakiye = 1000
+
+while True:
+    islem = input("Lütfen işlem seçiniz: ")
+    if islem == "q":
+        print("İyi Günler Dileriz..")
+        break
+    elif (islem == "1"):
+        print("Bakiye: {}".format(bakiye))
+
+    elif (islem == "2"):
+        tutar = int(input("Ne kadar çekmek istiyorsunuz: "))
+        
+        if (bakiye - tutar < 0):
+            print("Yetersiz bakiye...")
+            continue
+        bakiye -= tutar
+
+    elif (islem == "3"):
+        tutar = int(input("Ne kadar para yatırmak istiyorsunuz: "))
+        bakiye = bakiye + tutar
+        print("Yeni bakiyeniz: {}".format(bakiye))
+    else:
+        print("Geçersiz işlem girdiniz..!")
